@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | My project (1)</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas"style="width: 1920px; height: 1080px; background: #231F20"></canvas>
-    <script src="Build/1920X1080.loader.js"></script>
+    <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #231F20"></canvas>
+    <script src="Build/1600X900.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/1920X1080.data.unityweb",
-        frameworkUrl: "Build/1920X1080.framework.js.unityweb",
-        codeUrl: "Build/1920X1080.wasm.unityweb",
+        dataUrl: "Build/1600X900.data.unityweb",
+        frameworkUrl: "Build/1600X900.framework.js.unityweb",
+        codeUrl: "Build/1600X900.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "My project (1)",
